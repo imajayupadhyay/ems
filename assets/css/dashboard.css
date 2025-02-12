@@ -1,0 +1,11 @@
+@import url("global.css");
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #6c757d;
+}

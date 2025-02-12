@@ -1,0 +1,16 @@
+@import url("global.css");
+
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+td {
+    font-size: 16px;
+}
