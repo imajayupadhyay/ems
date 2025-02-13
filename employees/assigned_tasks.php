@@ -38,7 +38,7 @@ $tasks_result = $conn->query($tasks_query);
 
         <div class="main-content">
             <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Your Assigned Tasks</a>
+                <a class="navbar-brand p-2">Your Assigned Tasks</a>
             </nav>
             <table class="table table-striped">
                 <thead>

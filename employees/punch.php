@@ -36,6 +36,43 @@ if ($punch_in_time && !$punch_out_time) {
     color:white;
     font-size:bold;
 }
+@import url("global.css");
+
+.text-center {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.clock-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.current-time {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    font-size: 18px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    font-size: 18px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    font-size: 18px;
+}
+
     </style>
 </head>
 <body>
@@ -44,7 +81,7 @@ if ($punch_in_time && !$punch_out_time) {
 
         <div class="main-content text-center">
             <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Punch In/Out</a>
+                <a class="navbar-brand p-2">Punch In/Out</a>
             </nav>
             <p class="text-muted">Your work duration will be tracked here.</p>
 

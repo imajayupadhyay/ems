@@ -41,6 +41,51 @@ $total_hours = $work_hours_result->fetch_assoc()['total_hours'] ?? 0;
     color:white;
     font-size:bold;
 }
+@import url("global.css");
+
+.main-content {
+    padding: 20px;
+}
+
+/* Summary Cards */
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.summary-card h5 {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.summary-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Chart Cards */
+.chart-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+
     </style>
 </head>
 <body>
@@ -49,8 +94,8 @@ $total_hours = $work_hours_result->fetch_assoc()['total_hours'] ?? 0;
 
         <div class="main-content">
         <nav class="navbar px-3">
-                <a class="navbar-brand">Employee Dashboard</a>
-                <h4 class="text-white">Welcome, <?= $_SESSION['employee_name']; ?>!</h4>
+                <a class="navbar-brand p-2 ">Employee Dashboard</a>
+                <h4 class="text-white px-3">Welcome, <?= $_SESSION['employee_name']; ?>!</h4>
             </nav>
 
             <div class="container mt-4">

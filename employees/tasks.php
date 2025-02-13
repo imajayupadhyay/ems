@@ -41,6 +41,43 @@ $task_result = $conn->query($task_query);
             color: white;
             font-weight: bold;
         }
+        @import url("global.css");
+
+
+/* Task Form */
+#task_description {
+    width: 100%;
+    height: 350px;
+}
+
+/* Task Container */
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Task Card */
+.task-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-card .card-header {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-card .card-body {
+    padding: 10px;
+    font-size: 16px;
+}
+
     </style>
 </head>
 <body>
@@ -49,7 +86,7 @@ $task_result = $conn->query($task_query);
         
         <div class="main-content">
             <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Your Tasks</a>
+                <a class="navbar-brand p-2">Your Tasks</a>
             </nav>
             
             <!-- Task Input Form -->
