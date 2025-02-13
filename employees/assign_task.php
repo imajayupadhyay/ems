@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="main-content">
         <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Assign a Task</a>
+                <a class="navbar-brand p-2">Assign a Task</a>
             </nav>
             <form method="POST">
                 <div class="mb-3">

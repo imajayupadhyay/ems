@@ -49,7 +49,7 @@ $task_result = $conn->query($task_query);
         
         <div class="main-content">
             <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Your Tasks</a>
+                <a class="navbar-brand p-2">Your Tasks</a>
             </nav>
             
             <!-- Task Input Form -->

@@ -44,7 +44,7 @@ if ($punch_in_time && !$punch_out_time) {
 
         <div class="main-content text-center">
             <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Punch In/Out</a>
+                <a class="navbar-brand p-2">Punch In/Out</a>
             </nav>
             <p class="text-muted">Your work duration will be tracked here.</p>
 

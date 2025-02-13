@@ -32,7 +32,7 @@ $attendance_result = $conn->query($attendance_query);
         
         <div class="main-content">
             <nav class="navbar px-3 mb-3">
-                <a class="navbar-brand">Attendance History</a>
+                <a class="navbar-brand p-2">Attendance History</a>
             </nav>
             <table class="table table-striped">
                 <thead>

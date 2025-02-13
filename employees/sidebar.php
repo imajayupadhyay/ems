@@ -43,7 +43,7 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get current file name
 </head>
 <body>
 <div class="sidebar">
-    <h4 class="text-center text-white mt-3">Dashboard</h4>
+    <h4 class="text-center bg-primary text-white mt-3 mb-3 p-3">Dashboard</h4>
     <ul class="nav flex-column">
         <li class="nav-item">
             <a class="nav-link <?= ($current_page == 'dashboard.php') ? 'active' : '' ?>" href="dashboard.php">

@@ -49,8 +49,8 @@ $total_hours = $work_hours_result->fetch_assoc()['total_hours'] ?? 0;
 
         <div class="main-content">
         <nav class="navbar px-3">
-                <a class="navbar-brand">Employee Dashboard</a>
-                <h4 class="text-white">Welcome, <?= $_SESSION['employee_name']; ?>!</h4>
+                <a class="navbar-brand p-2 ">Employee Dashboard</a>
+                <h4 class="text-white px-3">Welcome, <?= $_SESSION['employee_name']; ?>!</h4>
             </nav>
 
             <div class="container mt-4">
