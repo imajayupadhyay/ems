@@ -24,6 +24,27 @@ $attendance_result = $conn->query($attendance_query);
     color:white;
     font-size:bold;
 }
+@import url("global.css");
+
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+td {
+    font-size: 16px;
+}
+
+h2{
+    font-size:16px;
+}
+
     </style>
 </head>
 <body>
