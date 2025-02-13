@@ -26,13 +26,26 @@ if ($punch_in_time && !$punch_out_time) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/css/punch.css" rel="stylesheet">
+    <style>
+     .navbar{
+    background-color:#05386b;
+   margin:0px;
+   border-radius:25px;
+}
+.navbar-brand{
+    color:white;
+    font-size:bold;
+}
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <?php include "sidebar.php"; ?>
 
         <div class="main-content text-center">
-            <h2 class="navbar navbar-dark bg-dark px-3 text-white text-center mb-5">Punch In/Out</h2>
+            <nav class="navbar px-3 mb-3">
+                <a class="navbar-brand">Punch In/Out</a>
+            </nav>
             <p class="text-muted">Your work duration will be tracked here.</p>
 
             <div class="clock-container">
