@@ -59,15 +59,15 @@ body {
             <!-- Admin Container -->
             <div class="col-md-4">
                 <a href="#" class="role-box">
-                    <img src="assets/images/admin.png" alt="Admin" class="role-avatar">
+                    <img src="../assets/images/admin.png" alt="Admin" class="role-avatar">
                     <h4>Admin</h4>
                 </a>
             </div>
 
             <!-- Employee Container -->
             <div class="col-md-4">
-                <a href="employees/login.php" class="role-box">
-                    <img src="assets/images/division.png" alt="Employee" class="role-avatar">
+                <a href="../employees/login.php" class="role-box">
+                    <img src="../assets/images/division.png" alt="Employee" class="role-avatar">
                     <h4>Employee</h4>
                 </a>
             </div>
@@ -75,7 +75,7 @@ body {
             <!-- Manager Container -->
             <div class="col-md-4">
                 <a href="#" class="role-box">
-                    <img src="assets/images/manager.png" alt="Manager" class="role-avatar">
+                    <img src="../assets/images/manager.png" alt="Manager" class="role-avatar">
                     <h4>Manager</h4>
                 </a>
             </div>

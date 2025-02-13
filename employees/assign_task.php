@@ -30,16 +30,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/css/tasks.css" rel="stylesheet">
+
+    <!-- TinyMCE Editor -->
+    <script src="https://cdn.tiny.cloud/1/mrwvrvsk4a9x9n68ecjzxtrvr3nkhcuqrxfuju1ad32ya65v/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#task_description',
+            height: 350,
+            menubar: false,
+            plugins: 'lists',
+            toolbar: 'undo redo | bold italic | bullist numlist',
+            setup: function (editor) {
+                editor.on('change', function () {
+                    tinymce.triggerSave();
+                });
+            }
+        });
+    </script>
+
     <style>
-     .navbar{
-    background-color:#05386b;
-   margin:0px;
-   border-radius:25px;
-}
-.navbar-brand{
-    color:white;
-    font-size:bold;
-}
+        .navbar {
+            background-color: #05386b;
+            margin: 0px;
+            border-radius: 25px;
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php include "sidebar.php"; ?>
 
         <div class="main-content">
-        <nav class="navbar px-3 mb-3">
+            <nav class="navbar px-3 mb-3">
                 <a class="navbar-brand p-2">Assign a Task</a>
             </nav>
             <form method="POST">
@@ -61,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Task Description</label>
-                    <textarea name="task_description" class="form-control" required></textarea>
+                    <textarea id="task_description" name="task_description"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary w-30">Assign Task</button>
             </form>

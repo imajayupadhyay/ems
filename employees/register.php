@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 .card {
-    max-width: 600px;
+    max-width: 90%;
     margin: auto;
     border-radius: 15px;
     padding: 20px;
